@@ -1,0 +1,25 @@
+.inspire {
+    text-align: center;
+}
+
+.inspire__text {
+    font-size: 28px;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.5;
+    padding: 20px 0;
+}
+
+.inspire__from {
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.inspire__from::before {
+    content: '---';
+}
+
+.inspire__from::after {
+    content: '---';
+}
