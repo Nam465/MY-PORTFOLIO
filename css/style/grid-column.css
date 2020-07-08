@@ -1,0 +1,19 @@
+/* col: 50%--> 100% */
+
+/* col: 25% -> 100% */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+[class*="col-"] {
+    width: calc(100% - 30px);
+    margin: 0 15px;
+  }
+
+  @media only screen and (min-width: 768px) {
+      .col-4 {width: calc(33.33% - 30px);}
+      .col-6 { width: calc(50% - 30px);}
+      .col-12 { width: calc(100% - 30px);}
+  }

@@ -1,0 +1,26 @@
+.i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: transparent;
+    opacity: .8;
+    text-decoration: none;
+}
+
+.i__inner {
+    font-size: 16px;
+    color: var(--white);
+}
+
+.i:hover {
+    background-color: var(--white);
+}
+.i:hover .i__inner {
+    color: var(--green);
+}
+
+

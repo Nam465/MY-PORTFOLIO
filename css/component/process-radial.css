@@ -1,0 +1,39 @@
+.p-radial {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.p-radial__info {
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.p-radial__bar, .p-radial__label {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid var(--light-grey);
+
+}
+
+.p-radial__bar {
+    position: relative;
+}
+
+.p-radial__label {
+    border: 5px solid var(--green);
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-radial__value {
+    font-size: 15px;
+    font-weight: 600;
+}

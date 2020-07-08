@@ -1,0 +1,17 @@
+.card {
+    box-shadow: -1rem 0 3rem #000;
+    border-radius: 5px;
+    padding:20px;
+    background-color: var(--grey);
+}
+
+
+.card__head {
+    margin: 5px;
+}
+
+.card__body {
+    margin: 5px;
+    font-size: 14px;
+}
+

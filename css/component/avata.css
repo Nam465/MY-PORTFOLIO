@@ -1,0 +1,26 @@
+.avata {
+    width: 350px;
+    height: 350px;
+    max-height: auto;
+    border: 15px solid var(--dark);
+    border-radius: 50%;
+}
+
+.avata__inner {
+    width: 100%;
+    height: 100%;
+    border: 15px solid var(--grey);
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.avata__bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-image: url('../../images/avata.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+

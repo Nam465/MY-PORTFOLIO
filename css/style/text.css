@@ -1,0 +1,59 @@
+/* text 14 18 20 */
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+}
+
+/* font-size */
+.text-1 {
+    font-size: 14px;
+}
+
+.text-2 {
+    font-size: 18px;
+}
+
+.text-3 {
+    font-size: 20px;
+}
+
+.text-4 {
+    font-size: 30px;
+}
+/* font-weight */
+.bold {
+    font-weight: 600;
+}
+
+.light-bold {
+    font-weight: 500;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.italic {
+    font-style: italic;
+}
+
+
+
