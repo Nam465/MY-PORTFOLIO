@@ -6,3 +6,6 @@ setInterval(function renderQuote() {
     document.querySelector('.inspire .inspire__text').innerText = text;
     document.querySelector('.inspire .inspire__from').innerText = from;
 }, 10000);
+
+// some code for bookmark
+addBookmarks();
