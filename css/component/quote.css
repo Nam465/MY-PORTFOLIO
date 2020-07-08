@@ -1,5 +1,9 @@
 .inspire {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
 }
 
 .inspire__text {

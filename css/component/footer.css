@@ -1,0 +1,10 @@
+.footer {
+    background-image: url('../../images/ft.png');
+
+}
+
+.footer__end {
+    background-color: var(--grey);
+    line-height: 100px;
+    height: 100px;
+}
