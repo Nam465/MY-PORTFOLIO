@@ -115,6 +115,8 @@ html,body {
 /* margin */
 /* 8, 10 ,20 ,30, 60 tb*/
 /* 10 20 30 lr */
+.mt-0 {margin-top: 0;}
+.pt-0 {padding-top: 0;}
 
 .mt-8 {margin-top: 8px;}
 .mb-8 {margin-bottom: 8px;}
