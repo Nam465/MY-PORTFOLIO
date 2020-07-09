@@ -26,8 +26,11 @@
     color: var(--green);
 }
 
+.nav__item--green {
+    border: 2px solid transparent;
+}
 .nav__item--green:hover {
-    border-bottom: 2px solid var(--white);
+    border-bottom: 2px solid var(--green);
 }
 
 @media only screen and (min-width: 780px) {

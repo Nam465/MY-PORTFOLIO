@@ -1,0 +1,44 @@
+.project {
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.project__image {
+    display: block;
+    width: 100%;
+}
+
+.project__mask, .project__title {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.project__mask {
+    background-color: var(--light-green);
+    opacity: 0;
+    transition: .3s;
+}
+
+.project__title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: .3s;
+    transform: translateY(100%);
+}
+
+/* when user hover on this card  */
+.project:hover .project__mask {
+    opacity: .8;
+}
+.project:hover .project__title {
+    opacity: 1 ;
+    transform: translateY(0);
+}

@@ -35,7 +35,9 @@ html,body {
     margin: 0 auto;
 }
 
-
+.pointer {
+    cursor: pointer;
+}
 
 
 
@@ -256,4 +258,12 @@ html,body {
         margin-left: 60px;
     }
 
+}
+
+
+/* masory grid setup
+==================
+*/
+.grid-item {
+    padding-bottom: 20px;
 }

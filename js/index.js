@@ -9,3 +9,13 @@ setInterval(function renderQuote() {
 
 // some code for bookmark
 addBookmarks();
+
+
+// masory grid setup code 
+// errorr???
+var elem = document.querySelector('.grid');
+var msnry = new Masonry( elem, {
+  // options
+  itemSelector: '.grid-item',
+  horizontalOrder: false
+});
