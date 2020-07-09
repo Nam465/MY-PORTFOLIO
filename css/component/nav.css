@@ -3,7 +3,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
-    display: none;
+    display: flex;
 }
 
 .nav__item, .nav__item--green {
@@ -31,8 +31,4 @@
 }
 .nav__item--green:hover {
     border-bottom: 2px solid var(--green);
-}
-
-@media only screen and (min-width: 780px) {
-    .nav {display: flex;}
 }
