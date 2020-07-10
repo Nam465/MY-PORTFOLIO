@@ -218,7 +218,7 @@ const quotes =
 function getRandomQuote() {
     let min = 0,
         max = quotes.length,
-        quoteIndex = Math.floor(Math.random() * (max - min) ) + min;
+        quoteIndex = Math.ceil(Math.random() * (max - min) ) + min;
     return quotes[quoteIndex];
 }
 

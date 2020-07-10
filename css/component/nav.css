@@ -29,6 +29,6 @@
 .nav__item--green {
     border: 2px solid transparent;
 }
-.nav__item--green:hover {
+.nav__item--state-click {
     border-bottom: 2px solid var(--green);
 }

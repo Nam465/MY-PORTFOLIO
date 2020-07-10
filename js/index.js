@@ -13,7 +13,7 @@ setInterval(function renderQuote() {
 
 
 
-// bookmark function for nav item and scroll to top element.
+// bookmark function for nav item.
   let eleList = document.querySelectorAll('#header .nav .nav__item a'),
       holders = [];
   for (let i = 0; i < eleList.length; i++) {
@@ -28,5 +28,20 @@ setInterval(function renderQuote() {
 
 
 // setup to apply mansory grid to projects grid.
-
 mansorySetup();
+
+// when user click on tab. color underline this tab.
+function fosingTab() {
+  let styleClass = 'nav__item--state-click';
+  let tabs = document.querySelectorAll('.project-tabs .nav__item--green');
+  tabs.forEach(tab => {
+    tab.addEventListener('click', e => {
+      // ...tab
+      // ...styleClass
+      let tabs = document.querySelectorAll('.project-tabs .nav__item--green');
+      tabs.forEach(t => {t.classList.remove(styleClass)});
+      tab.classList.add(styleClass);
+    });
+  });
+}
+fosingTab();
