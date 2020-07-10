@@ -23,6 +23,20 @@ function filterAndReloadGrid(condition, listProjects) {
     // 2. check all project in removed Array. which project match condition
     //    add to screen.
     let hold = [];
+
+    // check any project in removed array
+    removed.forEach(e => {
+        let value = e.getAttribute('data-category-value');
+        if (value.includes(condition)) {
+            // add project to .grid if it match with condition.
+            document.querySelector('.grid').appendChild(e);
+            msy.appended(e);
+            msy.layout();
+        }else 
+            // hold store all project is removed.
+            hold.push(e);
+    });
+    
     listProjects.forEach(project => {
         let value = project.getAttribute('data-category-value');
         if (!value.includes(condition)) {
@@ -31,16 +45,6 @@ function filterAndReloadGrid(condition, listProjects) {
             msy.layout();
     }
     });
-    // check any project in removed array
-    removed.forEach(e => {
-        let value = e.getAttribute('data-category-value');
-        if (value.includes(condition)) {
-            // add project to .grid if it match with condition.
-            document.querySelector('.grid').appendChild(e);
-            msy.appended(e);
-        }else 
-            // hold store all project is removed.
-            hold.push(e);
-    });
+
     removed = hold;
 }

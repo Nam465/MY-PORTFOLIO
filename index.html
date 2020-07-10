@@ -22,14 +22,52 @@
     <link rel="stylesheet" href="./css/component/quote.css">
     <link rel="stylesheet" href="./css/component/footer.css">
     <link rel="stylesheet" href="./css/component/project-card.css">
+    <link rel="stylesheet" href="./css/component/modal.css">
     <script src="https://kit.fontawesome.com/53afdc65bc.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
     
 </head>
 <body>
+    <!-- modal box 
+    ==============
+    -->
+    <div id="modal" class="modal index-2">
+        <div class="modal__box bg-green">
+            <div class="modal__close text-4 bold">&times</div>
+            <div class="modal__content text-4">
+                Hello world.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Eaque, voluptatem illum! Quaerat quod sequi ipsam, veniam molestiae 
+                illum dolore deleniti eligendi,
+                 fuga esse pariatur deserunt animi architecto, omnis assumenda rem!
+                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur
+                  eius aliquid facere laboriosam, minus odit incidunt tempora consequuntur non? Tempore!
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas debitis incidunt alias
+                   repudiandae dolorem possimus voluptates deleniti exercitationem unde at perspiciatis, e
+                  st rerum nisi, harum eaque repellat, reprehenderit dolorum quo!
+
+                  <ul>
+                      <li style="list-style: none;">
+                          <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora placeat totam temporibus, nostrum pariatur ab unde architecto commodi sapiente ullam, facilis obcaecati! Quasi omnis consectetur excepturi sequi magni debitis minima!</div>
+                          <div>Illo excepturi labore, explicabo voluptates, doloribus delectus quam debitis iste placeat neque facere pariatur non officia quod? Possimus tempora, blanditiis ratione, aliquid tenetur sit aut facilis soluta quidem reprehenderit repudiandae.</div>
+                          <div>Voluptatibus sit adipisci itaque? Soluta quod, facilis eveniet repellendus eligendi impedit ut veniam voluptas nemo officia vel suscipit esse? Provident aspernatur sapiente repellat tempore, maiores labore eos omnis reiciendis laboriosam.</div>
+                          <div>Maiores repellat fugit laudantium sit doloribus repudiandae eos nostrum ad commodi, eius in, voluptatum nulla ducimus? Dolor facere architecto quis ex quae animi deserunt eligendi, nobis natus. Temporibus, consequatur nihil!</div>
+                          <div>Nemo aperiam illum suscipit, obcaecati repellat incidunt? Cumque dolorum neque labore possimus suscipit! Voluptas doloremque provident quisquam, saepe nam sunt molestiae. Voluptatibus distinctio dignissimos recusandae aliquid similique cumque magni esse!</div>
+                          <div>Cumque nesciunt omnis nemo asperiores dolor amet obcaecati tempora, at vel similique odio natus dolorum quis voluptates voluptas, pariatur, a officia beatae neque. Ipsa deserunt, nemo totam blanditiis natus distinctio?</div>
+                          <div>Doloremque, ipsam. Maiores, possimus ipsam quo hic dolor doloremque corporis pariatur accusamus delectus amet quasi ut? Fugiat praesentium numquam et quisquam alias? Tempore incidunt vel accusantium maiores quae molestias ipsam?</div>
+                          <div>Amet ut animi nam. Suscipit optio corrupti dolores, modi mollitia aliquam vero ipsam. Culpa ipsum maxime rem magni. Ad porro fuga ut aliquid unde, nisi laudantium illo nam distinctio eligendi.</div>
+                          <div>Reprehenderit iusto vel aperiam molestias, dolorum perferendis nemo consectetur sint tenetur expedita, suscipit voluptate, eveniet ut. Fuga cupiditate corrupti, aperiam facere, quisquam dolore rem temporibus eaque obcaecati repellat, nulla hic.</div>
+                          <div>Nisi repellendus ullam delectus suscipit, hic explicabo alias vel inventore, itaque libero a ducimus eos repellat perspiciatis, atque consectetur vitae impedit dolorum maxime? Quos sit odio porro minima, neque nam!</div>
+                      </li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+
+
+
     <!-- header
-    ==========
     ==========
     -->
     <header id="header" class="fixed top-0 left-0 w-full index-1 transition">
@@ -66,6 +104,8 @@
     </header>
 
 <div id="main">
+
+
 
     <!-- hero page
     =============
@@ -499,7 +539,7 @@
     </div>
     <div id="all-projects"  class="grid row">
 
-        <div class="grid-item col-4 " data-category-value="all-1-2">
+        <div class="grid-item col-4 " data-category-value="all-2">
             <div class="project">
                 <img class="project__image" src="./images/project/g1.jpg" alt="#">
                 <div class="project__mask"></div>
@@ -513,7 +553,7 @@
                 </div>
             </div>           
         </div>
-        <div class="grid-item col-4" data-category-value="all-1-3">
+        <div class="grid-item col-4" data-category-value="all-1">
             <div class="project">
                 <img class="project__image" src="./images/project/g2.png" alt="#">
                 <div class="project__mask"></div>
@@ -541,7 +581,7 @@
                 </div>
             </div>            
         </div>
-        <div class="grid-item col-4" data-category-value="all-1-2-3-4">
+        <div class="grid-item col-4" data-category-value="all-2-3-4">
             <div class="project">
                 <img class="project__image" src="./images/project/g4.png" alt="#">
                 <div class="project__mask"></div>
@@ -583,7 +623,7 @@
                 </div>
             </div>            
         </div>
-        <div class="grid-item col-4" data-category-value="all-1-2-3">
+        <div class="grid-item col-4" data-category-value="all-2-3">
             <div class="project">
                 <img class="project__image" src="./images/project/g7.jpg" alt="#">
                 <div class="project__mask"></div>
@@ -600,6 +640,24 @@
       </div>
 </section>
 </div>
+
+
+<!-- just test 
+==============
+-->
+<div class="test">
+    <div id='open-modal' class="button pointer">open modal</div>
+    <!-- <div class="box bold text-4" style="width: 300px;
+                            height: 300px;
+                            background: var(--light-green);
+                            padding: 30px;">
+        MY BOX
+    </div> -->
+</div>
+    
+
+
+
 
     <!-- footer 
     ==========
@@ -623,6 +681,7 @@
     </div>
 </footer>
 
+<script src="./js/modal.js"></script>
 <script src="./js/masonry-setup.js"></script>
 <script src="./js/bookmark.js"></script>
 <script src="./js/header.js"></script>

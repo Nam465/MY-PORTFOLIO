@@ -30,14 +30,14 @@ setInterval(function renderQuote() {
 // setup to apply mansory grid to projects grid.
 mansorySetup();
 
+
+
 // when user click on tab. color underline this tab.
 function fosingTab() {
   let styleClass = 'nav__item--state-click';
   let tabs = document.querySelectorAll('.project-tabs .nav__item--green');
   tabs.forEach(tab => {
     tab.addEventListener('click', e => {
-      // ...tab
-      // ...styleClass
       let tabs = document.querySelectorAll('.project-tabs .nav__item--green');
       tabs.forEach(t => {t.classList.remove(styleClass)});
       tab.classList.add(styleClass);
@@ -45,3 +45,10 @@ function fosingTab() {
   });
 }
 fosingTab();
+
+
+
+// js code for modal box 
+let opmmd = document.getElementById('open-modal');
+setupModal();
+opmmd.onclick = e => openModal();
