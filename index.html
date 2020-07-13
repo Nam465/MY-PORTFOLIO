@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="./css/style/grid-column.css">
     <link rel="stylesheet" href="./css/style/animate.css">
     <link rel="stylesheet" href="./css/component/card.css">
-    <link rel="stylesheet" href="./css/component/process.css">
-    <link rel="stylesheet" href="./css/component/process-radial.css">
     <link rel="stylesheet" href="./css/style/position.css">
     <link rel="stylesheet" href="./css/style/display.css">
     <link rel="stylesheet" href="./css/style/image.css">
@@ -23,6 +21,8 @@
     <link rel="stylesheet" href="./css/component/footer.css">
     <link rel="stylesheet" href="./css/component/project-card.css">
     <link rel="stylesheet" href="./css/component/modal.css">
+    <link rel="stylesheet" href="./css/component/skill.css">
+    <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://kit.fontawesome.com/53afdc65bc.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
     <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
@@ -245,111 +245,56 @@
    ============== 
     -->
     <section id="skills" class="mb-60 pb-60" >
-        <div class="row">
-            <div class="col-6">
-                <div class="technical-skills">
-                    <h3 class="text-center mb-60">Technical-skills</h3>
-                    <div class="process">
-                        <div class="process__info">
-                            <div class="process__lg">Javascript</div>
-                            <div class="process__value">84%</div>
-                        </div>
-                        <div class="process__bar">
-                            <div class="process__label" style="width: 84%;"></div>
-                        </div>
+        <div class="row justify-center">
+
+            <div class="col-4">
+                <div>
+                    <h3 class="mb-60">Technical Skills</h3>
+                    <div class="skill">
+                        <i class="far fa-check-square skill__box"></i>
+                        <div class="skill__content">JAVASCRIPT</div>
                     </div>
-                    <div class="process">
-                        <div class="process__info">
-                            <div class="process__lg">Nodejs & express</div>
-                            <div class="process__value">80%</div>
-                        </div>
-                        <div class="process__bar">
-                            <div class="process__label" style="width: 80%;"></div>
-                        </div>
+                    <div class="skill">
+                        <i class="far fa-check-square skill__box"></i>
+                        <div class="skill__content">HTML & CSS</div>
                     </div>
-                    <div class="process">
-                        <div class="process__info">
-                            <div class="process__lg">Html & css</div>
-                            <div class="process__value">60%</div>
-                        </div>
-                        <div class="process__bar">
-                            <div class="process__label" style="width: 60%;"></div>
-                        </div>
+                    <div class="skill">
+                        <i class="far fa-check-square skill__box"></i>
+                        <div class="skill__content">MONGO DB</div>
                     </div>
-                    <div class="process">
-                        <div class="process__info">
-                            <div class="process__lg">Boostrap</div>
-                            <div class="process__value">70%</div>
-                        </div>
-                        <div class="process__bar">
-                            <div class="process__label" style="width: 70%;"></div>
-                        </div>
+                    <div class="skill">
+                        <i class="far fa-check-square skill__box"></i>
+                        <div class="skill__content">NODEJS & EXPRESS</div>
                     </div>
-                    <div class="process">
-                        <div class="process__info">
-                            <div class="process__lg">MongoDb</div>
-                            <div class="process__value">90%</div>
-                        </div>
-                        <div class="process__bar">
-                            <div class="process__label" style="width: 90%;"></div>
-                        </div>
+                    <div class="skill">
+                        <i class="far fa-check-square skill__box"></i>
+                        <div class="skill__content">GIT</div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-6">
-                <div class="profesional-skills">
-                    <h3 class="text-center mb-60">Profesional Skills</h3>
-                    <div class="row">
-                        <div class="col-6">
-                            <div class="p-radial">
-                                <div class="p-radial__info">
-                                    Communications
-                                </div>
-                                <div class="p-radial__bar">
-                                    <div class="p-radial__label">
-                                        <span class="p-radial__value">70%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="p-radial">
-                                <div class="p-radial__info">
-                                    Team work
-                                </div>
-                                <div class="p-radial__bar">
-                                    <div class="p-radial__label">
-                                        <span class="p-radial__value">60%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        <div class="col-6">
-                            <div class="p-radial">
-                                <div class="p-radial__info">
-                                    Project Management
-                                </div>
-                                <div class="p-radial__bar">
-                                    <div class="p-radial__label">
-                                        <span class="p-radial__value">50%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>                        <div class="col-6">
-                            <div class="p-radial">
-                                <div class="p-radial__info">
-                                    Creativity
-                                </div>
-                                <div class="p-radial__bar">
-                                    <div class="p-radial__label">
-                                        <span class="p-radial__value">50%</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div class="col-4">
+                <div>
+                    <h3 class="mb-60">Professional Skills</h3>
+                    <div class="skill">
+                        <i class="far fa-check-square skill__box"></i>
+                        <div class="skill__content">Communication</div>
+                    </div>
+                    <div class="skill">
+                        <i class="far fa-check-square skill__box"></i>
+                        <div class="skill__content">Team Work</div>
+                    </div>
+                    <div class="skill">
+                        <i class="far fa-check-square skill__box"></i>
+                        <div class="skill__content">Project Management</div>
+                    </div>
+                    <div class="skill">
+                        <i class="far fa-check-square skill__box"></i>
+                        <div class="skill__content">Creativity</div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
@@ -647,12 +592,6 @@
 -->
 <div class="test">
     <div id='open-modal' class="button pointer">open modal</div>
-    <!-- <div class="box bold text-4" style="width: 300px;
-                            height: 300px;
-                            background: var(--light-green);
-                            padding: 30px;">
-        MY BOX
-    </div> -->
 </div>
     
 

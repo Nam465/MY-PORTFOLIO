@@ -1,0 +1,20 @@
+.skill {
+    display: flex;
+    align-items: center;
+}
+
+.skill__box {
+    font-size: 20px;
+    color: var(--green);
+}
+
+.skill__content {
+    border-bottom: 2px solid var(--green);
+    margin: 10px 15px;
+    padding: 5px;
+    text-transform: uppercase;
+}
+
+.skill__content--strong {
+    border-bottom: 2px solid red !important;
+}
