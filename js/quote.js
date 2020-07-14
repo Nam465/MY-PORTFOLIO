@@ -217,7 +217,7 @@ const quotes =
 // reuturn a random quote from quotes data above.
 function getRandomQuote() {
     let min = 0,
-        max = quotes.length,
+        max = quotes.length - 1,
         quoteIndex = Math.ceil(Math.random() * (max - min) ) + min;
     return quotes[quoteIndex];
 }
