@@ -110,29 +110,29 @@
     <!-- hero page
     =============
     -->
-    <section id="hero-panel" class="row s-mtb-180">
+    <section id="hero-panel" class="hero-panel row s-mtb-180">
         <div class="col-6">
             <div class="mb-60">
             <div class="s-text-align-center">
                 <div class="button button--c text-1 bold mt-30">
                     Hello i'm
                 </div>
-                <h1 class="pt-30 pb-30">Lương Khắc Nam</h1>
-                <h4>Web Developer</h4>
+                <h1 class="hero-panel__name pt-30 pb-30"></h1> <!-- place-holder-->
+                <h4 class="hero-panel__job"></h4>
                 <div class="pt-10 pb-10">
                     <i class="far fa-envelope"></i>
-                    <span class="inline-block ml-10 text-1">Namggg465@gmail.com</span>
+                    <span class="hero-panel__email inline-block ml-10 text-1"></span> <!-- place-holder-->
                 </div>
                 <div class="pt-10 pb-10">
                     <i class="fas fa-mobile"></i>
-                    <span class="inline-block ml-10 text-1">0962-409-582</span>
+                    <span class="hero-panel__phone inline-block ml-10 text-1"></span> <!-- place-holder-->
                 </div>
                 <div class="pt-10 pb-10">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span class="inline-block ml-10 text-1">Hoang Mai - Ha Noi</span>
+                    <span class="hero-panel__address inline-block ml-10 text-1"></span> <!-- place-holder-->
                 </div>
-                <div class="social-icons flex-row mt-30">
-                    <a class="i mr-10" href="#">
+                <div class="hero-panel__social-icons flex-row mt-30">  <!-- place-holder-->
+                    <a class="i mr-10" href="#">  
                         <i class="fab fa-facebook-f i__inner"></i>
                     </a>
                     <a class="i mr-10" href="#">
@@ -151,7 +151,7 @@
         <div class="col-6 flex-row justify-center">
             <div class="avata">
                 <div class="avata__inner">
-                    <div class="avata__bg"></div>
+                    <div class="avata__bg"></div>  <!-- place-holder-->
                 </div>
             </div>
         </div>
@@ -171,22 +171,18 @@
             <div class="col-6">
                 <div class="pl-30 pr-30 pt-30">
                     <h2>About me</h2>
-                    <div class="tex-1 pt-20 pb-20">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                         Nostrum molestias id nam fuga mollitia quos.
+                    <div class="about__text tex-1 pt-20 pb-20">
+                        <!-- placeholder -->
                     </div>
-                    <div class="pt-20 pb-20">
-                        <span class="border text-1">Javascript</span>
-                        <span class="border text-1">CSS</span>
-                        <span class="border text-1">Php</span>
-                        <span class="border text-1">Html</span>
-                        <span class="border text-1">React</span>
-                        <span class="border text-1">Nodejs</span>
-                        <span class="border text-1">Express</span>
+                    <div class="about__tags-container pt-20 pb-20">
+                        <!-- <span class="border text-1"></span> place-holder -->
                     </div>
-                    <div class="button button--hover transition text-2 bold mt-30">
+
+                    <a class="about__dowload-cv" href="#">  <!-- placeholder -->
+                    <div class="button button--hover transition text-2 bold mt-30"> 
                         Dowload my cv
                      </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -200,11 +196,12 @@
                 <div class="card">
                     <div class="card__head">
                         <i class="fa fa-bullseye purble text-4 mt-8"></i>
-                        <h4 class="mt-20 mb-20">UI DESIGN</h4>
+                        <h4 class="mt-20 mb-20">
+                            <!-- placeholder -->
+                        </h4>  
                     </div>
-                    <div class='card__body'>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Repellendus consectetur numquam id 
+                    <div class='card__body'>  
+                        <!-- placeholder -->
                     </div>                
                 </div>
 
@@ -213,11 +210,12 @@
                 <div class="card">
                     <div class="card__head">
                         <i class="fa fa-code iron text-4 mt-8"></i>
-                        <h4 class="mt-20 mb-20">FON-TEND DEVELOPER</h4>
+                        <h4 class="mt-20 mb-20">
+                            <!-- placeholder -->
+                        </h4>  
                     </div>
-                    <div class="card__body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Repellendus consectetur numquam id 
+                    <div class="card__body">  
+                        <!-- placeholder -->
                     </div>
                 </div>
 
@@ -226,11 +224,12 @@
                 <div class="card">
                     <div class="card__head">
                         <i class="fa fa-object-ungroup blue text-4 mt-8"></i>
-                        <h4 class="mt-20 mb-20">BACK-END DEVELOPER</h4>    
+                        <h4 class="mt-20 mb-20">
+                            <!-- placeholder --> 
+                        </h4>     
                     </div>
-                    <div class="card__body">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Repellendus consectetur numquam id 
+                    <div class="card__body">  
+                        <!-- placeholder -->
                     </div>
                 </div>
             </div>
@@ -248,50 +247,26 @@
         <div class="row justify-center">
 
             <div class="col-4">
-                <div>
+                <div class="skills__technical-container">
                     <h3 class="mb-60">Technical Skills</h3>
-                    <div class="skill">
+                    <!-- <div class="skill">
                         <i class="far fa-check-square skill__box"></i>
                         <div class="skill__content">JAVASCRIPT</div>
-                    </div>
-                    <div class="skill">
-                        <i class="far fa-check-square skill__box"></i>
-                        <div class="skill__content">HTML & CSS</div>
-                    </div>
-                    <div class="skill">
-                        <i class="far fa-check-square skill__box"></i>
-                        <div class="skill__content">MONGO DB</div>
-                    </div>
-                    <div class="skill">
-                        <i class="far fa-check-square skill__box"></i>
-                        <div class="skill__content">NODEJS & EXPRESS</div>
-                    </div>
-                    <div class="skill">
-                        <i class="far fa-check-square skill__box"></i>
-                        <div class="skill__content">GIT</div>
-                    </div>
+                    </div> -->
+
+                    <!-- place-holder -->
                 </div>
             </div>
 
             <div class="col-4">
-                <div>
+                <div class="skills__professional-container">
                     <h3 class="mb-60">Professional Skills</h3>
-                    <div class="skill">
+                    <!-- <div class="skill">
                         <i class="far fa-check-square skill__box"></i>
                         <div class="skill__content">Communication</div>
-                    </div>
-                    <div class="skill">
-                        <i class="far fa-check-square skill__box"></i>
-                        <div class="skill__content">Team Work</div>
-                    </div>
-                    <div class="skill">
-                        <i class="far fa-check-square skill__box"></i>
-                        <div class="skill__content">Project Management</div>
-                    </div>
-                    <div class="skill">
-                        <i class="far fa-check-square skill__box"></i>
-                        <div class="skill__content">Creativity</div>
-                    </div>
+                    </div> -->
+
+                    <!-- place-holder -->
                 </div>
             </div>
             
@@ -307,9 +282,11 @@
     <section id="experience" class="mb-60 pb-60">
         <div class="row">
 
-            <div class="education col-6">
+            <div class="experience__education-container education col-6">
                 <h3 class="mb-60">Education</h3>
-                <div class="card mb-30">
+                <!-- place-holder -->
+
+                <!-- <div class="card mb-30">
                     <div class="card__head">
                         <h4>Art & Multimedia From 
                             <a href="#" class="green light-bold italic">Oxford University</a>
@@ -323,43 +300,15 @@
                              when looking at its layout. The point of using Lorem Ipsum
                         </div>
                     </div>
-                </div>
-                <div class="card mb-30">
-                    <div class="card__head">
-                        <h4>Art & Multimedia From 
-                            <a href="#" class="green light-bold italic">Oxford University</a>
-                        </h4>
-                    </div>
-                    <div class="card__body">
-                        <div class="green mt-10 mb-10">2005 - 2008</div>
-                        <div class="text-1">
-                            It is a long established fact that a reader will
-                             be distracted by the readable content of a page 
-                             when looking at its layout. The point of using Lorem Ipsum
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-30">
-                    <div class="card__head">
-                        <h4>Art & Multimedia From 
-                            <a href="#" class="green light-bold italic">Oxford University</a>
-                        </h4>
-                    </div>
-                    <div class="card__body">
-                        <div class="green mt-10 mb-10">2005 - 2008</div>
-                        <div class="text-1">
-                            It is a long established fact that a reader will
-                             be distracted by the readable content of a page 
-                             when looking at its layout. The point of using Lorem Ipsum
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
 
 
-            <div class="work-experience col-6">
+            <div class="experience__work-container  work-experience col-6">
                 <h3 class="mb-60">Work experience</h3>
-                <div class="card mb-30">
+                <!-- place-holder -->
+
+                <!-- <div class="card mb-30">
                     <div class="card__head">
                         <h4>Art & Multimedia From 
                             <a href="#" class="green light-bold italic">Oxford University</a>
@@ -373,37 +322,7 @@
                              when looking at its layout. The point of using Lorem Ipsum
                         </div>
                     </div>
-                </div>
-                <div class="card mb-30">
-                    <div class="card__head">
-                        <h4>Art & Multimedia From 
-                            <a href="#" class="green light-bold italic">Oxford University</a>
-                        </h4>
-                    </div>
-                    <div class="card__body">
-                        <div class="green mt-10 mb-10">2005 - 2008</div>
-                        <div class="text-1">
-                            It is a long established fact that a reader will
-                             be distracted by the readable content of a page 
-                             when looking at its layout. The point of using Lorem Ipsum
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-30">
-                    <div class="card__head">
-                        <h4>Art & Multimedia From 
-                            <a href="#" class="green light-bold italic">Oxford University</a>
-                        </h4>
-                    </div>
-                    <div class="card__body">
-                        <div class="green mt-10 mb-10">2005 - 2008</div>
-                        <div class="text-1">
-                            It is a long established fact that a reader will
-                             be distracted by the readable content of a page 
-                             when looking at its layout. The point of using Lorem Ipsum
-                        </div>
-                    </div>
-                </div>
+                </div> -->
             </div>
         </div>
 
@@ -477,14 +396,13 @@
     <h3 class="text-center mb-60">Some Projects</h3>
     <div id="project-tabs" class="project-tabs nav mb-30 bold justify-center">
         <div class="nav__item--green nav__item--state-click" data-category-condition="all">All Categories</div>
-        <div class="nav__item--green" data-category-condition="1">Web Design</div>
-        <div class="nav__item--green" data-category-condition="2">Branding</div>
-        <div class="nav__item--green" data-category-condition="3">Mockups</div>
-        <div class="nav__item--green" data-category-condition="4">Photography</div>
+        <!-- place-holder  -->
+
+
     </div>
     <div id="all-projects"  class="grid row">
 
-        <div class="grid-item col-4 " data-category-value="all-2">
+        <!-- <div class="grid-item col-4 " data-category-value="all-2">
             <div class="project">
                 <img class="project__image" src="./images/project/g1.jpg" alt="#">
                 <div class="project__mask"></div>
@@ -497,91 +415,10 @@
                     </div>
                 </div>
             </div>           
-        </div>
-        <div class="grid-item col-4" data-category-value="all-1">
-            <div class="project">
-                <img class="project__image" src="./images/project/g2.png" alt="#">
-                <div class="project__mask"></div>
-                <div class="project__title">
-                    <div class="text-4 bold">Create design</div>
-                    <div class="text-2">Photography</div>
-                    <div class="mt-10 mb-10">
-                        <i class="fas fa-eye text-4 mr-10 pointer"></i>
-                        <i class="fab fa-github text-4 ml-10 pointer"></i>
-                    </div>
-                </div>
-            </div>           
-        </div>
-        <div class="grid-item col-4" data-category-value="all-3-4">
-            <div class="project">
-                <img class="project__image" src="./images/project/g3.png" alt="#">
-                <div class="project__mask"></div>
-                <div class="project__title">
-                    <div class="text-4 bold">Create design</div>
-                    <div class="text-2">Photography</div>
-                    <div class="mt-10 mb-10">
-                        <i class="fas fa-eye text-4 mr-10 pointer"></i>
-                        <i class="fab fa-github text-4 ml-10 pointer"></i>
-                    </div>
-                </div>
-            </div>            
-        </div>
-        <div class="grid-item col-4" data-category-value="all-2-3-4">
-            <div class="project">
-                <img class="project__image" src="./images/project/g4.png" alt="#">
-                <div class="project__mask"></div>
-                <div class="project__title">
-                    <div class="text-4 bold">Create design</div>
-                    <div class="text-2">Photography</div>
-                    <div class="mt-10 mb-10">
-                        <i class="fas fa-eye text-4 mr-10 pointer"></i>
-                        <i class="fab fa-github text-4 ml-10 pointer"></i>
-                    </div>
-                </div>
-            </div>            
-        </div>
-        <div class="grid-item col-4" data-category-value="all-2-3-4">
-            <div class="project">
-                <img class="project__image" src="./images/project/g5.png" alt="#">
-                <div class="project__mask"></div>
-                <div class="project__title">
-                    <div class="text-4 bold">Create design</div>
-                    <div class="text-2">Photography</div>
-                    <div class="mt-10 mb-10">
-                        <i class="fas fa-eye text-4 mr-10 pointer"></i>
-                        <i class="fab fa-github text-4 ml-10 pointer"></i>
-                    </div>
-                </div>
-            </div>            
-        </div>
-        <div class="grid-item col-4" data-category-value="all-3-4">
-            <div class="project">
-                <img class="project__image" src="./images/project/g6.png" alt="#">
-                <div class="project__mask"></div>
-                <div class="project__title">
-                    <div class="text-4 bold">Create design</div>
-                    <div class="text-2">Photography</div>
-                    <div class="mt-10 mb-10">
-                        <i class="fas fa-eye text-4 mr-10 pointer"></i>
-                        <i class="fab fa-github text-4 ml-10 pointer"></i>
-                    </div>
-                </div>
-            </div>            
-        </div>
-        <div class="grid-item col-4" data-category-value="all-2-3">
-            <div class="project">
-                <img class="project__image" src="./images/project/g7.jpg" alt="#">
-                <div class="project__mask"></div>
-                <div class="project__title">
-                    <div class="text-4 bold">Create design</div>
-                    <div class="text-2">Photography</div>
-                    <div class="mt-10 mb-10">
-                        <i class="fas fa-eye text-4 mr-10 pointer"></i>
-                        <i class="fab fa-github text-4 ml-10 pointer"></i>
-                    </div>
-                </div>
-            </div>            
-        </div>
+        </div> -->
+  
+        <!-- place-holder  -->
+
       </div>
 </section>
 </div>
@@ -620,7 +457,8 @@
     </div>
 </footer>
 <!-- fill data  -->
-<script src="./js/data/information.js"></script>
+<script src="./js/renderFunctions.js"></script>
+<script src="./js/fetchData.js"></script>
 
 <!-- handle element -->
 <script src="./js/modal.js"></script>

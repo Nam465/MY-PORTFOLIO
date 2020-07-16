@@ -28,23 +28,23 @@ setInterval(function renderQuote() {
 
 
 // setup to apply mansory grid to projects grid.
-mansorySetup();
+// mansorySetup();
 
 
 
 // when user click on tab. color underline this tab.
-function fosingTab() {
-  let styleClass = 'nav__item--state-click';
-  let tabs = document.querySelectorAll('.project-tabs .nav__item--green');
-  tabs.forEach(tab => {
-    tab.addEventListener('click', e => {
-      let tabs = document.querySelectorAll('.project-tabs .nav__item--green');
-      tabs.forEach(t => {t.classList.remove(styleClass)});
-      tab.classList.add(styleClass);
-    });
-  });
-}
-fosingTab();
+// function fosingTab() {
+//   let styleClass = 'nav__item--state-click';
+//   let tabs = document.querySelectorAll('.project-tabs .nav__item--green');
+//   tabs.forEach(tab => {
+//     tab.addEventListener('click', e => {
+//       let tabs = document.querySelectorAll('.project-tabs .nav__item--green');
+//       tabs.forEach(t => {t.classList.remove(styleClass)});
+//       tab.classList.add(styleClass);
+//     });
+//   });
+// }
+// fosingTab();
 
 
 
