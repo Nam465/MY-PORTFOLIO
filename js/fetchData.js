@@ -52,7 +52,7 @@ fetch(projectsUrl)
         renderProjectSection(data);
     })
     .then(data => {
-            // setup to apply mansory grid to projects grid.
+            // setup to apply mansory grid to projects grid and filter project function.
             mansorySetup();
             // when user click on tab. color underline this tab.
             function fosingTab() {
@@ -67,6 +67,18 @@ fetch(projectsUrl)
             });
             }
             fosingTab();
+    })
+    .then(data => {
+        const pros = document.getElementById('all-projects');
+        let ps = pros.querySelectorAll('.grid .project');
+        console.log(ps);
+        ps.forEach(p => {
+           p.style.cursor = 'pointer';
+           p.addEventListener('click', e=> {
+                setupModal();
+                openModal();
+           });
+        });
     })
     .catch(err => console.log(err));
 

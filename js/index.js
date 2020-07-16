@@ -27,8 +27,5 @@ setInterval(function renderQuote() {
 
 
 
-  
-// js code for modal box 
-let opmmd = document.getElementById('open-modal');
-setupModal();
-opmmd.onclick = e => openModal();
+
+

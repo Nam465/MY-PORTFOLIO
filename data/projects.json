@@ -12,7 +12,7 @@
             "name": "Name Project",
             "imageUrl": "images/project/g1.jpg",
             "tech": "Nodejs, Mongo",
-            "previewUrl": "#"
+            "previewUrl": "data/ProjectPreview/p1.md"
         },
         {
             "id": 1,
@@ -20,7 +20,7 @@
             "name": "Name Project",
             "imageUrl": "images/project/g2.png",
             "tech": "Nodejs, Mongo",
-            "previewUrl": "#"
+            "previewUrl": "data/ProjectPreview/p1.md"
         },
         {
             "id": 2,
@@ -28,7 +28,7 @@
             "name": "Name Project",
             "imageUrl": "images/project/g3.png",
             "tech": "Nodejs, Mongo",
-            "previewUrl": "#"
+            "previewUrl": "data/ProjectPreview/p1.md"
         },
         {
             "id": 3,
@@ -36,7 +36,7 @@
             "name": "Name Project",
             "imageUrl": "images/project/g4.png",
             "tech": "Nodejs, Mongo",
-            "previewUrl": "#"
+            "previewUrl": "data/ProjectPreview/p1.md"
         },
         {
             "id": 4,
@@ -44,7 +44,7 @@
             "name": "Name Project",
             "imageUrl": "images/project/g5.png",
             "tech": "Nodejs, Mongo",
-            "previewUrl": "#"
+            "previewUrl": "data/ProjectPreview/p1.md"
         },
         {
             "id": 5,
@@ -52,7 +52,7 @@
             "name": "Name Project",
             "imageUrl": "images/project/g6.png",
             "tech": "Nodejs, Mongo",
-            "previewUrl": "#"
+            "previewUrl": "data/ProjectPreview/p1.md"
         },
         {
             "id": 6,
@@ -60,7 +60,7 @@
             "name": "Name Project",
             "imageUrl": "images/project/g7.jpg",
             "tech": "Nodejs, Mongo",
-            "previewUrl": "#"
+            "previewUrl": "data/ProjectPreview/p1.md"
         }
     ]
 }
