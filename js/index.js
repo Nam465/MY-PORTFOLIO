@@ -28,4 +28,3 @@ setInterval(function renderQuote() {
 
 
 
-

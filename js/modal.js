@@ -23,3 +23,7 @@ function openModal() {
     modal.style.display = 'block';
     document.body.classList.add(openStyle);
 }
+
+function addContentToModal(c) {
+    document.querySelector('.modal__content').innerHTML = c;
+}

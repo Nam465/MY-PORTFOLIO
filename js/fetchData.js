@@ -71,16 +71,26 @@ fetch(projectsUrl)
     .then(data => {
         const pros = document.getElementById('all-projects');
         let ps = pros.querySelectorAll('.grid .project');
-        console.log(ps);
         ps.forEach(p => {
-           p.style.cursor = 'pointer';
-           p.addEventListener('click', e=> {
-                setupModal();
-                openModal();
-           });
+            openProjectPreview(p);
         });
     })
     .catch(err => console.log(err));
 
 
-
+function openProjectPreview(p) {
+    p.style.cursor = 'pointer';
+    p.addEventListener('click', e=> {
+        let url = p.getAttribute('data-preview-url');
+        setupModal();
+        openModal();
+        fetch(url)
+            .then(res => res.text())
+            .then(data => {
+                // convert markdown format to html tags.
+                let rs = marked(data);
+                addContentToModal(rs);
+            })
+            .catch(err => console.log(err));
+    });
+}
