@@ -10,37 +10,65 @@
             "id": 0,
             "typeId": [1, 2],
             "name": "Name Project",
-            "imageUrl": "#",
+            "imageUrl": "images/project/g1.jpg",
             "tech": "Nodejs, Mongo",
-            "codeUrl": "#",
-            "url": "#"
+            "previewUrl": "#"
         },
         {
             "id": 2,
-            "typeId": [1,3],
+            "typeId": [1,2],
             "name": "Name Project",
-            "imageUrl": "#",
+            "imageUrl": "images/project/g2.png",
             "tech": "Nodejs, Mongo",
-            "codeUrl": "#",
-            "url": "#"
+            "previewUrl": "#"
         },
         {
             "id": 3,
-            "typeId": [2,3],
+            "typeId": [1,2],
             "name": "Name Project",
-            "imageUrl": "#",
+            "imageUrl": "images/project/g3.png",
             "tech": "Nodejs, Mongo",
-            "codeUrl": "#",
-            "url": "#"
+            "previewUrl": "#"
         },
         {
             "id": 4,
+            "typeId": [0,2,3],
+            "name": "Name Project",
+            "imageUrl": "images/project/g4.png",
+            "tech": "Nodejs, Mongo",
+            "previewUrl": "#"
+        },
+        {
+            "id": 5,
+            "typeId": [0,2,3],
+            "name": "Name Project",
+            "imageUrl": "images/project/g5.png",
+            "tech": "Nodejs, Mongo",
+            "previewUrl": "#"
+        },
+        {
+            "id": 6,
+            "typeId": [0,2,3],
+            "name": "Name Project",
+            "imageUrl": "images/project/g6.png",
+            "tech": "Nodejs, Mongo",
+            "previewUrl": "#"
+        },
+        {
+            "id": 7,
             "typeId": [0,2],
             "name": "Name Project",
-            "imageUrl": "#",
+            "imageUrl": "images/project/g7.jpg",
             "tech": "Nodejs, Mongo",
-            "codeUrl": "#",
-            "url": "#"
+            "previewUrl": "#"
+        },
+        {
+            "id": 8,
+            "typeId": [0,2],
+            "name": "Name Project",
+            "imageUrl": "images/project/g8.png",
+            "tech": "Nodejs, Mongo",
+            "previewUrl": "#"
         }
     ]
 }

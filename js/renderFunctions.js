@@ -115,5 +115,16 @@ function renderExperienceSection(data) {
 
 // project render
 function renderProjectSection(data) {
-    
+    let {type, projects} = data;
+    let tabs = document.querySelector('.project-tabs');
+    let projectContainer = document.querySelector('.all-projects');
+    type.forEach(t => {
+        let id = t.id,
+            name = t.name;
+        tabs.innerHTML += 
+        `<div class="nav__item--green" data-category-condition="${id}">${name}</div>`;
+    });
+    projects.forEach(p => {
+        
+    });
 }
