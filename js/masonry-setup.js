@@ -2,9 +2,9 @@
 // setup to apply mansory grid to projects grid.
 let msy;
 let removed = [];
-let tabs = document.querySelectorAll('.project-tabs .nav__item--green');
 
 function mansorySetup() {
+    let tabs = document.querySelectorAll('.project-tabs .nav__item--green');
     imagesLoaded( '.grid', () => {
     msy = new Masonry('.grid', {itemSelector: '.grid-item'});
     tabs.forEach(tab => {

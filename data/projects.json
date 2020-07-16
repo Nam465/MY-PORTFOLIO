@@ -15,7 +15,7 @@
             "previewUrl": "#"
         },
         {
-            "id": 2,
+            "id": 1,
             "typeId": [1,2],
             "name": "Name Project",
             "imageUrl": "images/project/g2.png",
@@ -23,7 +23,7 @@
             "previewUrl": "#"
         },
         {
-            "id": 3,
+            "id": 2,
             "typeId": [1,2],
             "name": "Name Project",
             "imageUrl": "images/project/g3.png",
@@ -31,7 +31,7 @@
             "previewUrl": "#"
         },
         {
-            "id": 4,
+            "id": 3,
             "typeId": [0,2,3],
             "name": "Name Project",
             "imageUrl": "images/project/g4.png",
@@ -39,7 +39,7 @@
             "previewUrl": "#"
         },
         {
-            "id": 5,
+            "id": 4,
             "typeId": [0,2,3],
             "name": "Name Project",
             "imageUrl": "images/project/g5.png",
@@ -47,7 +47,7 @@
             "previewUrl": "#"
         },
         {
-            "id": 6,
+            "id": 5,
             "typeId": [0,2,3],
             "name": "Name Project",
             "imageUrl": "images/project/g6.png",
@@ -55,18 +55,10 @@
             "previewUrl": "#"
         },
         {
-            "id": 7,
+            "id": 6,
             "typeId": [0,2],
             "name": "Name Project",
             "imageUrl": "images/project/g7.jpg",
-            "tech": "Nodejs, Mongo",
-            "previewUrl": "#"
-        },
-        {
-            "id": 8,
-            "typeId": [0,2],
-            "name": "Name Project",
-            "imageUrl": "images/project/g8.png",
             "tech": "Nodejs, Mongo",
             "previewUrl": "#"
         }

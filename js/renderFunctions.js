@@ -117,7 +117,7 @@ function renderExperienceSection(data) {
 function renderProjectSection(data) {
     let {type, projects} = data;
     let tabs = document.querySelector('.project-tabs');
-    let projectContainer = document.querySelector('.all-projects');
+    let projectContainer = document.getElementById('all-projects');
     type.forEach(t => {
         let id = t.id,
             name = t.name;
@@ -125,6 +125,30 @@ function renderProjectSection(data) {
         `<div class="nav__item--green" data-category-condition="${id}">${name}</div>`;
     });
     projects.forEach(p => {
+        let idP = p.id,
+            typeText = 'all-' + p.typeId.join('-'),
+            name = p.name,
+            imageUrl = p.imageUrl,
+            tech = p.tech,
+            previewUrl = p.previewUrl;
         
+        projectContainer.innerHTML += 
+        `
+        <div class="grid-item col-4 " data-category-value="${typeText}">
+            <div class="project" data-preview-url="${previewUrl}">
+                <img class="project__image" src="${imageUrl}" alt="#">
+                <div class="project__mask"></div>
+                <div class="project__title">
+                    <div class="text-4 bold">${name}</div>
+                    <div class="text-2">${tech}</div>
+                    <div class="mt-10 mb-10">
+                        <i class="fas fa-eye text-4 mr-10 pointer"></i>
+                    </div>
+                </div>
+            </div>           
+        </div>        
+        `;
     });
+
+
 }
