@@ -2,6 +2,8 @@
     box-shadow: -1rem 0 3rem #000;
     border-radius: 5px;
     background-color: var(--grey);
+    transition: .3s;
+    cursor: pointer;
 }
 
 
@@ -16,5 +18,9 @@
     font-size: 14px;
     padding: 0 20px 20px 20px;
 
+}
+
+.card:hover {
+    transform: translateY(-7px);
 }
 

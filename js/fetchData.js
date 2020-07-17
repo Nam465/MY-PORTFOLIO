@@ -4,6 +4,7 @@ let whatIDoUrl = 'https://raw.githubusercontent.com/xnameFV/MY-PORTFOLIO/master/
 let skillUrl = 'https://raw.githubusercontent.com/xnameFV/MY-PORTFOLIO/master/data/skills.json';
 let expUrl = 'https://raw.githubusercontent.com/xnameFV/MY-PORTFOLIO/master/data/experiences.json';
 let projectsUrl = 'https://raw.githubusercontent.com/xnameFV/MY-PORTFOLIO/master/data/projects.json';
+let gistUrl = 'https://api.github.com/users/xnameFV/gists';
 
 fetch(inforUrl)
             .then(res => res.json())
@@ -72,25 +73,55 @@ fetch(projectsUrl)
         const pros = document.getElementById('all-projects');
         let ps = pros.querySelectorAll('.grid .project');
         ps.forEach(p => {
-            openProjectPreview(p);
+            let url = p.getAttribute('data-preview-url');
+            openProjectPreview(p,url);
         });
     })
     .catch(err => console.log(err));
 
 
-function openProjectPreview(p) {
-    p.style.cursor = 'pointer';
-    p.addEventListener('click', e=> {
-        let url = p.getAttribute('data-preview-url');
-        setupModal();
-        openModal();
-        fetch(url)
-            .then(res => res.text())
-            .then(data => {
-                // convert markdown format to html tags.
-                let rs = marked(data);
-                addContentToModal(rs);
-            })
-            .catch(err => console.log(err));
-    });
-}
+
+let take6 = gistUrl + '?per_page=6';
+fetch(take6)
+    .then(res => res.json())
+    .then(listPost => {
+        document.querySelector('#featured-posts .row').innerHTML = '';
+        listPost.forEach(d => {
+            renderPostSection(d);
+        });
+    })
+    .then(listPost => {
+        let cards = document.querySelectorAll('#featured-posts .row .card');
+        cards.forEach(c => {
+            let id = c.getAttribute('data-id');
+            let url = 'https://api.github.com/gists/' + id;
+            fetch(url)
+                .then(res => res.json())
+                .then(data => {
+                    let key = Object.keys(data.files)[0];
+                    let nurl = data.files[key].raw_url;
+                    openProjectPreview(c, nurl);
+                });
+
+        });
+    })
+    .catch(err => console.log(err));
+
+
+
+    function openProjectPreview(p, url) {
+        p.style.cursor = 'pointer';
+        p.addEventListener('click', e=> {
+            setupModal();
+            openModal();
+            fetch(url)
+                .then(res => res.text())
+                .then(data => {
+                    console.log(data);
+                    // convert markdown format to html tags.
+                    let rs = marked(data);
+                    addContentToModal(rs);
+                })
+                .catch(err => console.log(err));
+        });
+    }

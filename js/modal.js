@@ -15,6 +15,7 @@ function setupModal() {
 
 
 function closeModal() {
+        modal.querySelector('.modal__content').innerHTML = '';
         modal.style.display = 'none';
         document.body.classList.remove(openStyle);
 }
@@ -25,5 +26,7 @@ function openModal() {
 }
 
 function addContentToModal(c) {
-    document.querySelector('.modal__content').innerHTML = c;
+    let ct =c;
+    document.querySelector('.modal__content').innerHTML = ct;
 }
+

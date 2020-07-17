@@ -14,10 +14,12 @@
     margin: 0 auto;
     margin-top: 100px;
     padding: 60px 30px;
+    background: #eee;
+    color: #333;
+    font-size: 18px;
 }
 
 .modal__close {
-    color: #fff;
     cursor: pointer;
     z-index: 30;
     float: left;

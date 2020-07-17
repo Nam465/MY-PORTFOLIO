@@ -1,3 +1,5 @@
+
+
 // section render
 function renderHeroSection(infor) {
     let {name , avataLink, email, phone, address, job, socialLinks} = infor;
@@ -151,4 +153,25 @@ function renderProjectSection(data) {
     });
 
 
+}
+
+
+
+// newest post render
+function renderPostSection(data) {
+    let postContainer = document.querySelector('#featured-posts .row');
+    let {description, created_at, id} = data;
+    postContainer.innerHTML +=
+    `<div class="col-4">
+        <div class="card pt-0 mb-20" data-id="${id}">
+            <div class="card__head">
+                <i class="far fa-clone text-4 green"></i>
+                <h4 class="mt-20 mb-20">${description}</h4>
+                <div class="mb-10">Post on <span class="green">${created_at.slice(0,10)}</span></div>
+            </div>
+            <div class="card__body">
+                <div class="button--square mt-20 mb-20">View Now.</div>
+            </div>
+        </div>
+    </div>`;
 }
