@@ -27,4 +27,6 @@ setInterval(function renderQuote() {
 
 
 
+  // lazy load setup
+  lazyLoad();
 

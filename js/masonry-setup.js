@@ -13,7 +13,7 @@ function mansorySetup() {
         let condition = tab.getAttribute('data-category-condition');
         filterAndReloadGrid(condition, listProjects);
     }
-    }); 
+    });
     } );
 }
 

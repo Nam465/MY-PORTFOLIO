@@ -117,7 +117,6 @@ fetch(take6)
             fetch(url)
                 .then(res => res.text())
                 .then(data => {
-                    console.log(data);
                     // convert markdown format to html tags.
                     let rs = marked(data);
                     addContentToModal(rs);

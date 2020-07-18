@@ -138,7 +138,7 @@ function renderProjectSection(data) {
         `
         <div class="grid-item col-4 " data-category-value="${typeText}">
             <div class="project" data-preview-url="${previewUrl}">
-                <img class="project__image" src="${imageUrl}" alt="#">
+                <img class="lozad project__image" data-src="${imageUrl}" alt="#">
                 <div class="project__mask"></div>
                 <div class="project__title">
                     <div class="text-4 bold">${name}</div>

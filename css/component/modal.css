@@ -9,25 +9,28 @@
 }
 
 .modal__box {
-    width: 80%;
-    height: 80%;
-    margin: 0 auto;
-    margin-top: 100px;
-    padding: 60px 30px;
+    width: 90%;
+    height: 90%;
+    padding: 70px 50px;
     background: #eee;
     color: #333;
     font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .modal__close {
     cursor: pointer;
     z-index: 30;
     float: left;
+    color: #333;
 }
 
 .modal__close:hover,
 .modal__close:focus {
-    color: #ccc;
+    color: #222;
 }
 
 .modal__content {
@@ -38,4 +41,66 @@
 
 .modal-open {
     overflow: hidden;
+}
+
+
+
+
+
+/* css for markdwon */
+.modal * {
+    line-height: 1.5;
+}
+
+.modal ul, .modal ol {
+    list-style-position: inside;
+}
+
+.modal h1, .modal h2, .modal h3, .modal h4, .modal h5, .modal h6 {
+    margin: 15px 0px;
+}
+
+.modal pre {
+    padding: 20px 5px;
+    margin: 15px 0;
+    border-radius: 5px;
+    background-color: #555;
+    color: #eee;
+}
+
+.modal pre a {
+    color: turquoise;
+}
+
+.modal a {
+    color: blue;
+}
+
+.modal table {
+    margin: 20px 0;
+}
+
+.modal table, .modal tr, .modal th, .modal td {
+    border: 1px solid #333;
+}
+
+.modal th {
+    background-color: #333;
+    color: #eee;
+}
+
+.modal td {
+    padding: 5px;
+}
+
+.modal img {
+    display: block;
+    max-width: 100%;
+    margin: 10px auto;
+}
+
+.modal blockquote {
+    border-left: 10px solid #888;
+    padding-left: 10px;
+    margin: 10px 0;
 }
