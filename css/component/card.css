@@ -15,12 +15,11 @@
 
 .card__body {
     margin: 5px;
-    font-size: 14px;
     padding: 0 20px 20px 20px;
 
 }
 
 .card:hover {
-    transform: translateY(-7px);
+    transform: translateY(-10px);
 }
 

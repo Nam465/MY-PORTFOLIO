@@ -21,7 +21,7 @@ function renderAboutSection(data) {
     let {about, tags} = data;
     let listTags = '';
     tags.forEach(tag => {
-        listTags += `<span class="border text-1 mr-10">${tag}</span>`;
+        listTags += `<span class="border mr-2" style="font-size: .75rem">${tag}</span>`;
     });
 
     document.querySelector('.about__text').innerText = about;
@@ -78,15 +78,15 @@ function renderExperienceSection(data) {
             text = exp.text;
         if (type === 'education') {
            document.querySelector('.experience__education-container').innerHTML +=
-           `<div class="card mb-30">
+           `<div class="card mb-4">
                 <div class="card__head">
                     <h4>
                     ${title}
                     </h4>
                 </div>
                 <div class="card__body">
-                    <div class="green mt-10 mb-10">${time}</div>
-                    <div class="text-1">
+                    <div class="green mt-2 mb-2">${time}</div>
+                    <div>
                         ${text}
                     </div>
                 </div>
@@ -95,15 +95,15 @@ function renderExperienceSection(data) {
         }else if (type = 'work') {
             // do something
             document.querySelector('.experience__work-container').innerHTML +=
-                `<div class="card mb-30">
+                `<div class="card mb-4">
                     <div class="card__head">
                         <h4>
                             ${title}
                         </h4>
                     </div>
                     <div class="card__body">
-                        <div class="green mt-10 mb-10">${time}</div>
-                        <div class="text-1">
+                        <div class="green mt-2 mb-2">${time}</div>
+                        <div>
                           ${text}
                         </div>
                     </div>
@@ -163,14 +163,14 @@ function renderPostSection(data) {
     let {description, created_at, id} = data;
     postContainer.innerHTML +=
     `<div class="col-4">
-        <div class="card pt-0 mb-20" data-id="${id}">
+        <div class="card mb-4" data-id="${id}">
             <div class="card__head">
-                <i class="far fa-clone text-4 green"></i>
-                <h4 class="mt-20 mb-20">${description}</h4>
-                <div class="mb-10">Post on <span class="green">${created_at.slice(0,10)}</span></div>
+                <i class="far fa-clone green"></i>
+                <h4 class="mt-2 mb-2">${description}</h4>
+                <div class="mb-1">Post on <span class="green">${created_at.slice(0,10)}</span></div>
             </div>
             <div class="card__body">
-                <div class="button--square mt-20 mb-20">View Now.</div>
+                <div class="button--square mt-2 mb-2">View Now.</div>
             </div>
         </div>
     </div>`;

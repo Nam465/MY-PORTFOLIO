@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/component/project-card.css">
     <link rel="stylesheet" href="./css/component/modal.css">
     <link rel="stylesheet" href="./css/component/skill.css">
+    <link rel="stylesheet" href="./css/style/spacing.css">
     <link href="//fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <script src="https://kit.fontawesome.com/53afdc65bc.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
@@ -49,14 +50,14 @@
     <!-- header
     ==========
     -->
-    <header id="header" class="fixed top-0 left-0 w-full index-1 transition">
-        <div class="limit-w pt-20 pb-20">
+    <header id="header" class="fixed transition" style="width: 100%; top: 0; z-index: 50;">
+        <div class="limit-w pt-2 mb-2">
 
-            <div class="flex-row justify-between align-center ml-10 mr-10">
+            <div class="flex-row justify-between align-center">
                 <a class="grow-2" href="#">
                     <img src="./images/logo.png" alt="logo">
                 </a>
-                <ul class="nav text-2 bold">
+                <ul class="nav">
                     <li class="nav__item transition">
                         <a href="#" data-scroll-to-id="#header">Home</a>
                     </li>
@@ -92,38 +93,38 @@
     <!-- hero page
     =============
     -->
-    <section id="hero-panel" class="hero-panel row s-mtb-180">
+    <section id="hero-panel" class="hero-panel row" style="padding-top: 150px;">
         <div class="col-6">
-            <div class="mb-60">
+            <div class="pt-3">
             <div class="s-text-align-center">
-                <div class="button button--c text-1 bold mt-30">
+                <div class="button button--c mb-3">
                     Hello i'm
                 </div>
-                <h1 class="hero-panel__name pt-30 pb-30"></h1> <!-- place-holder-->
-                <h4 class="hero-panel__job"></h4>
-                <div class="pt-10 pb-10">
+                <h1 class="hero-panel__name " style="font-size: 3rem;"></h1> <!-- place-holder-->
+                <h4 class="hero-panel__job" style="font-size: 1rem;"></h4>
+                <div class="pt-2 pb-2">
                     <i class="far fa-envelope"></i>
-                    <span class="hero-panel__email inline-block ml-10 text-1"></span> <!-- place-holder-->
+                    <span class="hero-panel__email inline-block ml-2"></span> <!-- place-holder-->
                 </div>
-                <div class="pt-10 pb-10">
+                <div class="pt-2 pb-2">
                     <i class="fas fa-mobile"></i>
-                    <span class="hero-panel__phone inline-block ml-10 text-1"></span> <!-- place-holder-->
+                    <span class="hero-panel__phone inline-block ml-2"></span> <!-- place-holder-->
                 </div>
-                <div class="pt-10 pb-10">
+                <div class="pt-2 pb-2">
                     <i class="fas fa-map-marker-alt"></i>
-                    <span class="hero-panel__address inline-block ml-10 text-1"></span> <!-- place-holder-->
+                    <span class="hero-panel__address inline-block ml-2"></span> <!-- place-holder-->
                 </div>
-                <div class="hero-panel__social-icons flex-row mt-30">  <!-- place-holder-->
-                    <a class="i mr-10" href="#">  
+                <div class="hero-panel__social-icons flex-row pt-3">  <!-- place-holder-->
+                    <a class="i" href="#">  
                         <i class="fab fa-facebook-f i__inner"></i>
                     </a>
-                    <a class="i mr-10" href="#">
+                    <a class="i" href="#">
                         <i class="fab fa-twitter i__inner"></i>
                     </a>
-                    <a class="i mr-10" href="#">
+                    <a class="i" href="#">
                         <i class="fab fa-github i__inner"></i>
                     </a>
-                    <a class="i mr-10" href="#">
+                    <a class="i" href="#">
                         <i class="fab fa-linkedin-in i__inner"></i>
                     </a>
                 </div>
@@ -144,24 +145,24 @@
     =============== 
     -->
 
-    <section id="about" class="pt-8 mb-60 pb-60">
+    <section id="about" class="">
 
-        <div class="row s-ptb-100">
+        <div class="row" style="padding-top: 150px; margin-bottom: 150px;">
             <div class="col-6">
                 <img class="image-fluid" src="./images/about.png" alt="#">
             </div>
             <div class="col-6">
-                <div class="pl-30 pr-30 pt-30">
-                    <h2>About me</h2>
-                    <div class="about__text tex-1 pt-20 pb-20">
+                <div class="ml-4">
+                    <h2 class="mb-4">About me</h2>
+                    <div class="about__text ">
                         <!-- placeholder -->
                     </div>
-                    <div class="about__tags-container pt-20 pb-20">
+                    <div class="about__tags-container pt-4 mb-4">
                         <!-- <span class="border text-1"></span> place-holder -->
                     </div>
 
-                    <a class="about__dowload-cv" href="#">  <!-- placeholder -->
-                    <div class="button button--hover transition text-2 bold mt-30"> 
+                    <a class="about__dowload-cv " href="#">  <!-- placeholder -->
+                    <div class="button button--hover transition"> 
                         Dowload my cv
                      </div>
                     </a>
@@ -172,13 +173,13 @@
         <!-- what i do
          -->
             <h3 class="text-center">What i do</h3>
-            <div class="what-i-do row mt-60">
+            <div class="what-i-do row mt-5">
                 
             <div class="col-4 pb-30">
                 <div class="card">
                     <div class="card__head">
                         <i class="fa fa-bullseye purble text-4 mt-8"></i>
-                        <h4 class="mt-20 mb-20">
+                        <h4 class="mt-2 mb-2">
                             <!-- placeholder -->
                         </h4>  
                     </div>
@@ -192,7 +193,7 @@
                 <div class="card">
                     <div class="card__head">
                         <i class="fa fa-code iron text-4 mt-8"></i>
-                        <h4 class="mt-20 mb-20">
+                        <h4 class="mt-2 mb-2">
                             <!-- placeholder -->
                         </h4>  
                     </div>
@@ -206,7 +207,7 @@
                 <div class="card">
                     <div class="card__head">
                         <i class="fa fa-object-ungroup blue text-4 mt-8"></i>
-                        <h4 class="mt-20 mb-20">
+                        <h4 class="mt-2 mb-2">
                             <!-- placeholder --> 
                         </h4>     
                     </div>
@@ -225,12 +226,12 @@
     <!-- skills 
    ============== 
     -->
-    <section id="skills" class="mb-60 pb-60" >
+    <section id="skills" style="padding-top: 150px;" >
         <div class="row justify-center">
 
             <div class="col-4">
                 <div class="skills__technical-container">
-                    <h3 class="mb-60">Technical Skills</h3>
+                    <h3 class="mb-4">Technical Skills</h3>
                     <!-- <div class="skill">
                         <i class="far fa-check-square skill__box"></i>
                         <div class="skill__content">JAVASCRIPT</div>
@@ -242,7 +243,7 @@
 
             <div class="col-4">
                 <div class="skills__professional-container">
-                    <h3 class="mb-60">Professional Skills</h3>
+                    <h3 class="mb-4">Professional Skills</h3>
                     <!-- <div class="skill">
                         <i class="far fa-check-square skill__box"></i>
                         <div class="skill__content">Communication</div>
@@ -261,11 +262,11 @@
     <!-- Experiences
     ===============    
     -->
-    <section id="experience" class="mb-60 pb-60">
+    <section id="experience" style="padding-top: 150px;">
         <div class="row">
 
             <div class="experience__education-container education col-6">
-                <h3 class="mb-60">Education</h3>
+                <h3 class="mb-5">Education</h3>
                 <!-- place-holder -->
 
 
@@ -273,7 +274,7 @@
 
 
             <div class="experience__work-container  work-experience col-6">
-                <h3 class="mb-60">Work experience</h3>
+                <h3 class="mb-5">Work experience</h3>
                 <!-- place-holder -->
                 
             </div>
@@ -288,8 +289,8 @@
     <!-- Featured Posts
     ==============
     -->
-    <section id="featured-posts" class=" mb-60 pb-60">
-        <h3 class="text-center mb-60">Newest Posts</h3>
+    <section id="featured-posts" style="padding-top: 150px;">
+        <h3 class="text-center mb-5">Newest Posts</h3>
     <div class="row">
         <!-- place-holder  -->
         
@@ -302,9 +303,9 @@
     <!-- project
     ================
     -->
-<section id="project">
-    <h3 class="text-center mb-60">Some Projects</h3>
-    <div id="project-tabs" class="project-tabs nav mb-30 bold justify-center">
+<section id="project" style="padding-top: 150px;">
+    <h3 class="text-center mb-5">Some Projects</h3>
+    <div id="project-tabs" class="project-tabs nav mb-4 bold justify-center">
         <div class="nav__item--green nav__item--state-click" data-category-condition="all">All Categories</div>
         <!-- place-holder  -->
 
