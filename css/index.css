@@ -47,6 +47,17 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    border-style: none;
+}
+
+ul,
+ol,
+dl {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
 
 #main, .limit-w {
     max-width: 1024px;

@@ -51,9 +51,6 @@
     line-height: 1.5;
 }
 
-.modal ul, .modal ol {
-    list-style-position: inside;
-}
 
 .modal h1, .modal h2, .modal h3, .modal h4, .modal h5, .modal h6 {
     margin: 15px 0px;

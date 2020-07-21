@@ -35,7 +35,7 @@ function renderWhatToDoSection(data) {
     let cards = document.querySelectorAll('.what-i-do .card');
     for (let i = 0; i < cards.length; i++) {
         let container = cards[i],
-            h4 = cards[i].querySelector('h4'),
+            h4 = cards[i].querySelector('h5'),
             cardBody = cards[i].querySelector('.what-i-do .card__body');
         h4.innerText = data[i].title;
         cardBody.innerText = data[i].text;
@@ -141,10 +141,10 @@ function renderProjectSection(data) {
                 <img class="lozad project__image" data-src="${imageUrl}" alt="#">
                 <div class="project__mask"></div>
                 <div class="project__title">
-                    <div class="text-4 bold">${name}</div>
-                    <div class="text-2">${tech}</div>
-                    <div class="mt-10 mb-10">
-                        <i class="fas fa-eye text-4 mr-10 pointer"></i>
+                    <div class="h3">${name}</div>
+                    <div class="h4">${tech}</div>
+                    <div class="mt-1 mb-1">
+                        <i class="fas fa-eye h4 pointer"></i>
                     </div>
                 </div>
             </div>           
@@ -165,8 +165,8 @@ function renderPostSection(data) {
     `<div class="col-4">
         <div class="card mb-4" data-id="${id}">
             <div class="card__head">
-                <i class="far fa-clone green"></i>
-                <h4 class="mt-2 mb-2">${description}</h4>
+                <i class="far fa-clone green h4"></i>
+                <h5 class="mt-2 mb-2">${description}</h5>
                 <div class="mb-1">Post on <span class="green">${created_at.slice(0,10)}</span></div>
             </div>
             <div class="card__body">
